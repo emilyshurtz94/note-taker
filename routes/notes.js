@@ -1,9 +1,11 @@
 const notes = require('express').Router();
 const fs = require('fs');
+const util = require('util');
+const readFromFile = util.promisify(fs.readFile)
 
 notes.get('/', (req, res) => {
     console.info(`${req.method} request received for feedback`)
-    return res.json(db)
+ readFromFile('./db/db.json').then((data) =>res.json(JSON.parse(data)))
 });
 
 
