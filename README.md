@@ -1,7 +1,7 @@
 # Note Taker
-
+https://note-taker-0123.herokuapp.com/
 ## Description
-    Created an application that will create notes and save them.
+    Created an application that will create notes and save them and delete unwanted notes.
 
 ## Table of Contents
 - [Description](#description) 
